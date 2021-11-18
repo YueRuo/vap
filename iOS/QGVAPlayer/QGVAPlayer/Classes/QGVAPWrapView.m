@@ -134,8 +134,7 @@
                 realWidth = videoRatio * realHeight;
             }
             
-            self.vapView.frame = CGRectMake(0, 0, realWidth, realHeight);
-            self.vapView.center = self.center;
+            self.vapView.frame = CGRectMake((self.bounds.size.width - realWidth) / 2, (self.bounds.size.height - realHeight) / 2, realWidth, realHeight);
         }
             break;;
         case QGVAPWrapViewContentModeAspectFill: {
@@ -147,8 +146,7 @@
                 realWidth = videoRatio * realHeight;
             }
             
-            self.vapView.frame = CGRectMake(0, 0, realWidth, realHeight);
-            self.vapView.center = self.center;
+            self.vapView.frame = CGRectMake((self.bounds.size.width - realWidth) / 2, (self.bounds.size.height - realHeight) / 2, realWidth, realHeight);
         }
             break;;
         default:
